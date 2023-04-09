@@ -1,0 +1,508 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Videograph | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'portfolio:home' %}"><img src="{% static 'img/papi-logo2.png' %}" alt="" width="165" height="40"></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'portfolio:home' %}">Home</a></li>
+                                <li class="active"><a href="{% url 'portfolio:about_us' %}">About</a></li>
+                                <li><a href="{% url 'portfolio:portfolio' %}">Portfolio</a></li>
+                                
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>About us</h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- About Section Begin -->
+    <section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__pic">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="about__pic__item about__pic__item--large set-bg"
+                                    data-setbg="{% static 'img/about/doodly1.jpg' %}"></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="about__pic__item set-bg" data-setbg="{% static 'img/about/Powtoon.jpg' %}"></div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="about__pic__item set-bg" data-setbg="{% static 'img/about/videoscribe-log.png' %}"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <span>About Papi Anim8</span>
+                            <h2>WHo we are?</h2>
+                        </div>
+                        <div class="row">
+                           
+                            
+                        </div>
+                        <div class="about__text__desc">
+                            <p> 
+                                Welcome to Papi Anim8, where creativity meets imagination!
+                                We are a team of passionate and skilled animators who are 
+                                dedicated to creating exceptional whiteboard animations that 
+                                communicate your message in the most captivating way possible. 
+                                Our mission is to help our clients bring their ideas to life and 
+                                connect with their audience in a meaningful and memorable way.
+                                At Papi Anim8, we believe that every business has a unique story to tell. 
+                                Our team works closely with our clients to understand their brand, vision, 
+                                and goals, in order to create a personalized and compelling whiteboard animation 
+                                that captures the essence of their message.
+                                Our creative process begins with a deep dive into your story. We conduct extensive 
+                                research and brainstorming sessions to understand your target audience, industry, and 
+                                competition. From there, we develop a script that communicates your message in a clear and concise way.
+                                Once the script is finalized, our talented animators get to work. We use state-of-the-art technology 
+                                and techniques to create a visually stunning and engaging whiteboard animation that will 
+                                leave a lasting impression on your audience.
+                                But our work doesn't stop there. We believe in building long-term relationships with our clients, 
+                                and we are committed to providing exceptional customer service and support throughout the entire process. 
+                                From the initial consultation to the final product delivery, we are with you every step of the way.
+                                So whether you are looking to promote your brand, explain a complex concept, or educate your audience, 
+                                Papi Anim8 has the creativity and expertise to bring your message to life. Place an order today let us help 
+                                you achieve your goals and make an impact in your industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial spad set-bg" data-setbg="{% static 'img/image.gif' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>Loved By Clients</span>
+                        <h2>What clients say?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testimonial__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p> 
+                                    I just wanted to take a moment to share my experience working with your whiteboard animation
+                                    services. From the very beginning i was very impressed with the level of professionalism 
+                                    and expertise that your team brought to the table, Thank You.
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Emily Johnson (Smart Scholar)</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p> 
+                                    The animation that you created for us was nothing short of exceptional.
+                                    They were engaging, informative and perfectly captured the essence of our message.
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Brandon Carter (Gene Therapy Initiative)</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p> 
+                                    Not only were the animations of the highest quality 
+                                    but the customer service and communication throughout the process
+                                    were also outstanding. Your team was always responsive, proactive and went above 
+                                    and beyond to ensure that we were completely satisfied. 
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Julia Davies (Puresun Energy)</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p>  
+                                    I would highly recommend Papi Anim8 Whiteboard Animation services
+                                    to anyone looking for top notch animation and exceptional customer service thank you for an outstanding experience,
+                                    i look forward to working with you in the future.
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Ryan Patel (Cancer Fighters)</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p> 
+                                    I recently had the pleasure of working with Papi Anim8
+                                    for their whiteboard Animation services and i must say that i am 
+                                    extremely impressed with their level of professionalism and quality of work.
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                   
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Samantha Miller (SkyTech)</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p> 
+                                    Their attention to detail and commitment to excellence was evident in every aspect of the
+                                    project. They were able to take my vision and turn it into a reality, creating a project that exceeded my expectations 
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Tyler Andrew (ShieldTech)</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p> 
+                                    Overall, i highly recommend Papi Anim8 for their Whiteboard Animation
+                                    services. If you are looking for a team that is dedicated, talented and delivers top notch results, look no futher.
+                                    Thank you Papi Anim8 for an exceptional experience.
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Mia Jackson (Purrfect Pet Grooming)</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+    <section class="counter">
+        <div class="container">
+            <div class="counter__content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-1.png' %}" alt="">
+                                <h2 class="counter_num">92</h2>
+                                <p>Completed Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item second__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-2.png' %}" alt="">
+                                <h2 class="counter_num">75</h2>
+                                <p>Happy clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item third__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-3.png' %}" alt="">
+                                <h2 class="counter_num">30</h2>
+                                <p>Team Members</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item four__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-4.png' %}" alt="">
+                                <h2 class="counter_num">230</h2>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team spad set-bg" data-setbg="{% static 'img/team-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title team__title">
+                        <span>Nice to meet</span>
+                        <h2>OUR Team</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/project-manager.jpg' %}">
+                        <div class="team__item__text">
+                            <h4>STEVE HARRISON</h4>
+                            <p>Lead Animator</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--second set-bg" data-setbg="{% static 'img/team/jeff-brown.jpg' %}">
+                        <div class="team__item__text">
+                            <h4>JEFF BROWN</h4>
+                            <p>lead Voice Over Artist</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--third set-bg" data-setbg="{% static 'img/team/script-writer.jpg' %}">
+                        <div class="team__item__text">
+                            <h4>ANNABELL SUSAN</h4>
+                            <p>Lead Script Writter</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--four set-bg" data-setbg="{% static 'img/team/project-manager2.jpg' %}">
+                        <div class="team__item__text">
+                            <h4>Mr Spencer</h4>
+                            <p>Project Manager</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 p-0">
+                    <div class="team__btn">
+                        <a href="#" class="primary-btn">Meet Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="{% static 'img/papi-logo2.png' %}" alt="" width="165" height="40"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>About us</h5>
+                            <p> 
+                                Welcome to Papi Anim8, where creativity meets imagination!
+                                At Papi Anim8, we believe that every business has a unique
+                                 story to tell. Our team works closely with our clients to 
+                                 understand their brand, vision, and goals, in order to create 
+                                 a personalized and compelling whiteboard animation that captures the essence of their message.
+                            </p>
+                            <a href="{% url 'portfolio:about_us' %}" class="read__more">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Our Work</h5>
+                            <p>Whiteboard Explainer Videos</p>
+                            <p>Whiteboard Ads</p>
+                            <p>Script Writing and Editing</p>
+                            <p>Voice Over</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>Newsletter</h5>
+                            <p>Papi Anim8 is a talented whiteboard animation agency designed to help you tell your story better.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="footer__copyright__text">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved<i
+                                aria-hidden="true"></i> @<a href="https://colorlib.com" target="_blank">PAPI ANIM8</a>
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/mixitup.min.js' %}"></script>
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="//code.tidio.co/g0lw1nexqrmlzkrbd91e3wqqx2fuebdb.js" async></script>
+</body>
+
+</html>

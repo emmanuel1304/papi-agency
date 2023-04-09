@@ -1,0 +1,475 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Papi Anim8</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'portfolio:home' %}"><img src="{% static 'img/papi-logo2.png' %}" alt="" width="165" height="40"></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="{% url 'portfolio:home' %}">Home</a></li>
+                                <li><a href="{% url 'portfolio:about_us' %}">About</a></li>
+                                <li><a href="{% url 'portfolio:portfolio' %}">Portfolio</a></li>
+                                
+
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="{% static 'img/hero/white4.jpg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="{% static 'img/hero/white.jpg' %}" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>for whiteboard animations</span>
+                                <h2 style="color: #ffffff;">one whiteboard at a time..</h2>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="{% static 'img/hero/white4.jpg' %}">
+                <div class="container">
+                    <div class="row" id="access">
+                        <div class="col-lg-6">
+                            <img src="{% static 'img/hero/white5.png' %}" alt="" style="border-radius: 20px;">
+                        </div><br>
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>papi anim8</span>
+                                <h2>bringing your ideas to life..</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="{% static 'img/hero/white4.jpg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="{% static 'img/hero/screen.png' %}" alt="" style="border-radius: 20px;">
+                        </div><br>
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>visualize your ideas</span>
+                                <h2>let papi anim8 tell your story..</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="{% static 'img/hero/white4.jpg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="{% static 'img/hero/whiteboard5.jpg' %}" alt="" style="border-radius: 20px;">
+                        </div><br>
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>drawing your ideas into reality</span>
+                                <h2>Transforming complex ideas into visual simplicity</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="{% static 'img/hero/white4.jpg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="{% static 'img/hero/whiteboard6.webp' %}" alt="" style="border-radius: 20px;">
+                        </div><br>
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Visual storytelling at it's best</span>
+                                <h2>let our whiteboard animation do the talking for you</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Our services</span>
+                            <h2>What We do?</h2>
+                        </div>
+                        <p> 
+                            Welcome to Papi Anim8!
+                            At our agency, we specialize in creating engaging and captivating whiteboard animation videos for businesses, organizations, and individuals.
+                            Our team of talented animators, illustrators, and storytellers work collaboratively with our clients to bring their ideas to life in a fun and visually appealing way.
+                            Whether you're looking to promote a new product or service, explain a complex concept, or simply add some excitement to your website or social media channels, we've got you covered.
+                            With our attention to detail and commitment to delivering high-quality work, we're confident that we can help you achieve your goals and stand out in today's crowded digital landscape.
+                            So why wait? Place an order today to get  the perfect whiteboard animation video for your needs.
+                        </p>
+                        <a href="{% url 'portfolio:portfolio' %}" class="primary-btn">View Our Portfolio</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="{% static 'img/icons/video.svg' %}" alt="" height="50">
+                                </div>
+                                <h4>Whiteboard Explainer Videos</h4>
+                                <p> 
+                                    At Papi Anim8, we understand the power of storytelling and the impact it can have on your audience. 
+                                    Our team of talented artists, writers, and animators work together to create visually stunning and compelling 
+                                    videos that effectively communicate your message to your target audience. We use the latest tools and techniques to create 
+                                    videos that are engaging, entertaining, and informative, while still being cost-effective.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="{% static 'img/icons/ads.svg' %}" alt=""height="50">
+                                </div>
+                                <h4>Whiteboard Advert Videos</h4>
+                                <p> 
+                                    With a focus on delivering creative and effective advertising solutions, Papi Anim8 works with businesses, 
+                                    organizations, and individuals to create custom whiteboard advert videos that effectively showcase their products and services.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="{% static 'img/icons/writing.svg' %}" alt="" height="50">
+                                </div>
+                                <h4>Script Writing and Editing</h4>
+                                <p> 
+                                    At Papi Anim8, we understand the importance of a well-crafted script in creating a 
+                                    successful whiteboard animation video. Our writers use their creativity and expertise to 
+                                    develop scripts that are not only informative but also engaging and memorable. We work closely with our 
+                                    clients to understand their goals, target audience, and messaging to ensure that the final script is aligned with their needs and objectives.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="{% static 'img/icons/voice.svg' %}" alt="" height="50">
+                                </div>
+                                <h4>Voice Over</h4>
+                                <p> 
+                                    Papi Animate offers professional voice-over services to enhance the impact 
+                                    and effectiveness of your whiteboard animation videos. Our team of experienced 
+                                    voice-over artists provides high-quality audio recordings that match the tone, style, and messaging of your video.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Work Section Begin -->
+    <section class="work">
+        <div class="work__gallery">
+            <div class="grid-sizer"></div>
+            {% for project in project %}
+            <div class="work__item small__item set-bg">
+                <video width='380' height="" controls poster="{{project.image.url}}">
+                    <source src="{{ project.video.url }}" type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            {% endfor %}
+            
+            
+        </div>
+    </section>
+    <!-- Work Section End -->
+
+    <!-- Counter Section Begin -->
+    <section class="counter">
+        <div class="container">
+            <div class="counter__content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-1.png' %}" alt="">
+                                <h2 class="counter_num">92</h2>
+                                <p>Completed Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item second__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-2.png' %}" alt="">
+                                <h2 class="counter_num">75</h2>
+                                <p>Happy clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item third__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-3.png' %}" alt="">
+                                <h2 class="counter_num">30</h2>
+                                <p>Team Members</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item four__item">
+                            <div class="counter__item__text">
+                                <img src="{% static 'img/icons/ci-4.png' %}" alt="">
+                                <h2 class="counter_num">230</h2>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team spad set-bg" data-setbg="{% static 'img/team-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title team__title">
+                        <span>Nice to meet</span>
+                        <h2>OUR Team</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item set-bg" data-setbg="{% static 'img/team/project-manager.jpg' %}">
+                        <div class="team__item__text">
+                            <h4>STEVE HARRISON</h4>
+                            <p>Lead Animator</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--second set-bg" data-setbg="{% static 'img/team/jeff-brown.jpg' %}">
+                        <div class="team__item__text">
+                            <h4>JEFF BROWN</h4>
+                            <p>lead Voice Over Artist</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--third set-bg" data-setbg="{% static 'img/team/script-writer.jpg' %}">
+                        <div class="team__item__text">
+                            <h4>ANNABELL SUSAN</h4>
+                            <p>Lead Script Writter</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--four set-bg" data-setbg="{% static 'img/team/project-manager2.jpg' %}">
+                        <div class="team__item__text">
+                            <h4>Mr Spencer</h4>
+                            <p>Project Manager</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 p-0">
+                    <div class="team__btn">
+                        <a href="#" class="primary-btn">Meet Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Latest Blog Section Begin -->
+    
+    <!-- Latest Blog Section End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="{% static 'img/callto-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
+                        <p>PAPI ANIM8 Best place to work</p>
+                        <a href="{% url 'portfolio:portfolio' %}">Start your stories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="{% static 'img/papi-logo2.png' %}" alt="" width="165" height="40"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>About us</h5>
+                            <p> 
+                                Welcome to Papi Anim8, where creativity meets imagination!
+                                At Papi Anim8, we believe that every business has a unique
+                                 story to tell. Our team works closely with our clients to 
+                                 understand their brand, vision, and goals, in order to create 
+                                 a personalized and compelling whiteboard animation that captures the essence of their message.
+                            </p>
+                            <a href="{% url 'portfolio:about_us' %}" class="read__more">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Our Work</h5>
+                            <p>Whiteboard Explainer Videos</p>
+                            <p>Whiteboard Ads</p>
+                            <p>Script Writing and Editing</p>
+                            <p>Voice Over</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>Newsletter</h5>
+                            <p>Papi Anim8 is a talented whiteboard animation agency designed to help you tell your story better.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="footer__copyright__text">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved<i
+                                aria-hidden="true"></i> @<a href="https://colorlib.com" target="_blank">PAPI ANIM8</a>
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/mixitup.min.js' %}"></script>
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="//code.tidio.co/g0lw1nexqrmlzkrbd91e3wqqx2fuebdb.js" async></script>
+</body>
+
+</html>
